@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 3</title>
+</head>
+<body>
+</body>
+<script>
+    let x=+prompt("Nhập số x:")
+    function sumOfListPrime(x){
+        let sum=0;
+        for (let i=2;i<= x;i++){
+            let flag=true;
+            for (let j=2;j<=Math.pow(i,1/2);j++){
+                if (i%j===0){
+                    flag=false;
+                }
+            }
+                if (flag){
+                    sum+=i;
+                }
+        }
+        return sum
+    }
+    document.write("Tổng cần tìm là" + sumOfListPrime(x))
+</script>
+</html>

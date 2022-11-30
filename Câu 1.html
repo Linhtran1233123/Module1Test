@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 1</title>
+</head>
+<body>
+<p>Điểm trung bình là : </p>
+<p id="score" ></p>
+</body>
+<script>
+  let diem=[6,5,7,8,9,4,5,3,7,8];
+  function findAVG(arr){
+    let sum=0;
+    for(let i=0;i<arr.length;i++){
+      sum+=arr[i];
+    }
+    return sum/arr.length;
+  }
+  document.getElementById("score").innerHTML=findAVG(diem);
+</script>
+</html>
